@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewActivity"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/big_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/ic_launcher_background"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    >
+                    <Button
+                        android:layout_marginRight="2dp"
+                        android:id="@+id/stage_button"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="#FF40CD"
+                        android:text="최신\n영상"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    app:cardCornerRadius="10dp">
+
+                    <Button
+
+                        android:id="@+id/infoBtn"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:background="#FF40CD"
+                        android:text="정보\n보기"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FCC7E1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="5dp"
+                    app:cardCornerRadius="10dp">
+
+                    <Button
+                        android:id="@+id/view_comment_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50sp"
+                        android:background="#FF40CD"
+                        android:text="280개"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <androidx.cardview.widget.CardView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#34ffdd"
+                        app:cardCornerRadius="10dp">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/like_btn"
+                            android:layout_width="50sp"
+                            android:layout_height="50sp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="43sp"
+                            android:background="#FF40CD"
+                            android:gravity="right"
+                            app:lottie_autoPlay="false"
+                            app:lottie_fileName="heart2.json"
+                            app:lottie_loop="false" />
+
+                        <TextView
+                            android:layout_width="55dp"
+                            android:layout_height="50sp"
+                            android:layout_alignParentRight="true"
+                            android:background="#FF40CD"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:text="좋아요"
+                            android:textColor="@color/white" />
+
+                        <!--            <Button-->
+                        <!--                android:id="@+id/likeBtn"-->
+                        <!--                android:layout_width="wrap_content"-->
+                        <!--                android:layout_height="wrap_content"-->
+                        <!--                android:background="#01a7f6"-->
+                        <!--                android:gravity="center_vertical"-->
+                        <!--                android:text="좋아요"-->
+                        <!--                android:textColor="@color/white"-->
+                        <!--                android:textStyle="bold"-->
+                        <!--                />-->
+
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="5dp"
+                    app:cardCornerRadius="10dp">
+
+                    <Button
+                        android:id="@+id/voteBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="50sp"
+                        android:background="#FF40CD"
+                        android:text="투표하기"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="5dp"
+                    app:cardCornerRadius="10dp">
+
+                    <Button
+                        android:id="@+id/shareBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50sp"
+                        android:background="#FF40CD"
+                        android:text="공유"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_marginTop="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+
+                    android:layout_marginLeft="10dp"
+                    android:clickable="true"
+                    android:id="@+id/CmEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:maxLines="5"
+                    android:hint="댓글을 입력해주세요..."
+                    android:maxLength="120"
+                    />
+
+                <ImageButton
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/cmSave"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:srcCompat="@android:drawable/ic_menu_send"
+                    android:background="#FCC7E1"
+                    />
+            </LinearLayout>
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/timeViewLayout"-->
+            <!--                android:paddingStart="5dp"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content">-->
+            <!--                <TextView-->
+            <!--                    android:textColor="@color/black"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="다음 광고시청 가능 시간"/>-->
+            <!--                <TextView-->
+            <!--                    android:textColor="@color/black"-->
+            <!--                    android:id="@+id/timeMinuteTxt"-->
+            <!--                    android:paddingStart="5dp"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="00"/>-->
+            <!--                <TextView-->
+            <!--                    android:textColor="@color/black"-->
+            <!--                    android:id="@+id/timeSecondTxt"-->
+            <!--                    android:paddingStart="5dp"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text=": 00"/>-->
+            <!--            </LinearLayout>-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/cm_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/cmProgressBar"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ProgressBar
+                        android:indeterminateTint="#01a7f6"
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"/>
+                    <TextView
+                        android:text="Loading.."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#eee" />
+                <Button
+                    android:id="@+id/btn_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:text="더보기" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
