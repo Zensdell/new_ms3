@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "372994200888",
+    "project_id": "new-ms3",
+    "storage_bucket": "new-ms3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372994200888:android:906c47b4076a3968e65dcd",
+        "android_client_info": {
+          "package_name": "com.kkk.new_ms3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPTs4JmomPEvNcLEYW7R4kV-aHplqGDE4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
