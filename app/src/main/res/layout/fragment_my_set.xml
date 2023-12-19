@@ -133,7 +133,7 @@
             android:layout_marginTop="10sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="트롯가수 응원하기 안내사항"
+            android:text="미스트롯3 응원하기 안내사항"
             android:textColor="@color/black"
             />
 

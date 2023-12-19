@@ -7,8 +7,11 @@ import android.os.Handler
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
+
+
         //        Log.d("SPLASH", auth.currentUser!!.uid)
         //Toast.makeText(this,"기존 비회원 로그인 회원입니다",Toast.LENGTH_LONG).show()
         Handler().postDelayed({

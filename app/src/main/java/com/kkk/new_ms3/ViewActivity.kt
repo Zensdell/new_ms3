@@ -123,7 +123,7 @@ class ViewActivity : AppCompatActivity() {
         MobileAds.initialize(this) {}
 
         var adRequest = AdRequest.Builder().build() //업로드 전 !!!펍코드 꼭 바꿀것!!!!
-        RewardedAd.load(this,"ca-app-pub-8246055051187544/4382300469", adRequest, object : RewardedAdLoadCallback() {
+        RewardedAd.load(this,"ca-app-pub-8246055051187544/7596977895", adRequest, object : RewardedAdLoadCallback() {
             override fun onAdFailedToLoad(adError: LoadAdError) {
                 Log.d(TAG, adError.toString())
                 Log.d("애드몹리워드광고로드실패","애드몹 리워드 못 받음")
@@ -446,7 +446,7 @@ class ViewActivity : AppCompatActivity() {
 
             // Load ad one more >.< 광고 로드 실패시 로드 한 번 더 시도하기
             var adRequest = AdRequest.Builder().build()
-            RewardedAd.load(this,"ca-app-pub-8246055051187544/4382300469", adRequest, object : RewardedAdLoadCallback() {
+            RewardedAd.load(this,"ca-app-pub-8246055051187544/7596977895", adRequest, object : RewardedAdLoadCallback() {
                 override fun onAdFailedToLoad(adError: LoadAdError) {
                     Log.d(TAG, adError.toString())
                     rewardedAd = null
@@ -461,7 +461,7 @@ class ViewActivity : AppCompatActivity() {
 
         // Load ad one more >.< 그냥 로드 많이 되게.. 광고 봐도 로드 되고
         var adRequest = AdRequest.Builder().build()
-        RewardedAd.load(this,"ca-app-pub-8246055051187544/4382300469", adRequest, object : RewardedAdLoadCallback() {
+        RewardedAd.load(this,"ca-app-pub-8246055051187544/7596977895", adRequest, object : RewardedAdLoadCallback() {
             override fun onAdFailedToLoad(adError: LoadAdError) {
                 Log.d(TAG, adError.toString())
                 rewardedAd = null
